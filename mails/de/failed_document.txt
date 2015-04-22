@@ -1,0 +1,3 @@
+Hallo,
+
+bei der Aktualisierung des Dokuments {document} unter der ShopID {shopid} via ProtectedShops AGB Connect sind Fehler aufgetreten.

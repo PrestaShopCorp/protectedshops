@@ -1,0 +1,48 @@
+// Version 2.1
+
+Rewrite for new protected shops API 2.0
+Add new document format html-responsive
+Cleanup for PS validation process
+Update translations
+
+// Version 2.0
+
+Add automatic request for update script
+Increment version to 2.0
+
+// Version 06
+
+Update document handling
+Add optional send document as pdf on order
+Add automatic update by interval 6,12,24 hours
+Remove rating
+Add email alert on failures
+Update translations
+Some updates for PS 1.6 compat
+
+// Version 05
+
+Finalize translations
+
+// Version 04
+
+Add vote connect
+Add rating block
+Add rating on order confirmation
+Update lib touchdesign
+Update translations
+Update comments
+
+// Version 03
+
+Update version 03
+Update comments
+
+// Version 02
+
+Upgrade for PS 1.4
+Add lib touchdesign
+
+// Version 01
+
+Initial release

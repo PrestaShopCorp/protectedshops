@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>protectedshops</name>
+	<displayName><![CDATA[Protected Shops]]></displayName>
+	<version><![CDATA[2.1.0]]></version>
+	<description><![CDATA[Protected Shops AGB connect module]]></description>
+	<author><![CDATA[touchdesign]]></author>
+	<tab><![CDATA[others]]></tab>
+	<confirmUninstall><![CDATA[Are you sure you want to delete your details?]]></confirmUninstall>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>
+<module_key>556bb246da8b8eae0673aa1ca8862418</module_key>

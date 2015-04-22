@@ -1,0 +1,5 @@
+Hallo {firstname} {lastname},
+
+vielen Dank für die Ihre Bestellung  {order_id} auf {shop_url}.
+
+Bitte lesen Sie die beigefügten Dokumente zu Ihrer Bestellung.

@@ -1,0 +1,5 @@
+Hallo {firstname} {lastname},
+
+thank you for your order {order} on {shop_name}.
+
+Enclosed please find our attached document <b>{document}</b> in PDF format to your order {order} on {shop_name}.
