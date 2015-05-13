@@ -45,7 +45,7 @@ class Protectedshops extends Module
 		$this->displayName = $this->l('Protected Shops');
 		$this->description = $this->l('Protected Shops AGB connect module');
 		$this->confirmUninstall = $this->l('Are you sure you want to delete your details?');
-                $this->module_key = "556bb246da8b8eae0673aa1ca8862418"
+        $this->module_key = "556bb246da8b8eae0673aa1ca8862418";
 		/* Backward compatibility */
 		if (version_compare(_PS_VERSION_, '1.5', '<'))
 			require(_PS_MODULE_DIR_.$this->name.'/backward_compatibility/backward.php');
