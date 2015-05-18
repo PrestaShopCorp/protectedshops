@@ -42,8 +42,8 @@ class Protectedshops extends Module
 		$this->author = 'touchdesign';
 		parent::__construct();
 		$this->page = basename(__FILE__, '.php');
-		$this->displayName = $this->l('Protected Shops');
-		$this->description = $this->l('Protected Shops AGB connect module');
+		$this->displayName = $this->l('Protected Shops AGB Connect');
+		$this->description = $this->l('Protected Shops AGB Connect module');
 		$this->confirmUninstall = $this->l('Are you sure you want to delete your details?');
 		$this->module_key = '556bb246da8b8eae0673aa1ca8862418';
 		/* Backward compatibility */
@@ -66,7 +66,7 @@ class Protectedshops extends Module
 			|| !$this->registerHook('displayHeader'))
 			return false;
 
-		$sql = 'CREATE TABLE '._DB_PREFIX_.'touchdesign_protectedshops_document(
+		$sql = 'CREATE TABLE IF NOT EXISTS '._DB_PREFIX_.'touchdesign_protectedshops_document(
 			document VARCHAR(255) NOT NULL,
 			cms_id INT(11) NOT NULL,
 			mail SMALLINT(1),
@@ -93,7 +93,7 @@ class Protectedshops extends Module
 			|| !parent::uninstall())
 			return false;
 
-		$sql = 'DROP TABLE '._DB_PREFIX_.'touchdesign_protectedshops_document';
+		$sql = 'DROP TABLE IF EXISTS '._DB_PREFIX_.'touchdesign_protectedshops_document';
 		if (!Db::getInstance()->Execute($sql))
 			return false;
 		return true;
