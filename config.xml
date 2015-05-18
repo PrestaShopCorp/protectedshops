@@ -3,7 +3,7 @@
 	<name>protectedshops</name>
 	<displayName><![CDATA[Protected Shops]]></displayName>
 	<version><![CDATA[2.1.0]]></version>
-	<description><![CDATA[Protected Shops AGB connect module]]></description>
+	<description><![CDATA[Protected Shops AGB Connect module]]></description>
 	<author><![CDATA[touchdesign]]></author>
 	<tab><![CDATA[others]]></tab>
 	<confirmUninstall><![CDATA[Are you sure you want to delete your details?]]></confirmUninstall>

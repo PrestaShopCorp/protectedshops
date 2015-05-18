@@ -2,8 +2,8 @@
 
 global $_MODULE;
 $_MODULE = array();
-$_MODULE['<{protectedshops}prestashop>protectedshops_e5eff20f05b31302007570cadf434ba9'] = 'Protected Shops';
-$_MODULE['<{protectedshops}prestashop>protectedshops_36c517f7a902ca9109387c0db4d18f7d'] = 'Protected Shops AGB Connect Module';
+$_MODULE['<{protectedshops}prestashop>protectedshops_e5eff20f05b31302007570cadf434ba9'] = 'Protected Shops AGB Connect';
+$_MODULE['<{protectedshops}prestashop>protectedshops_36c517f7a902ca9109387c0db4d18f7d'] = 'Generate legal texts like terms and conditions, imprint, privacy policy and many more - Automatically protected against legal proceedings.';
 $_MODULE['<{protectedshops}prestashop>protectedshops_69a1a3ad8dd5da6db3c4da838a0cf9c7'] = 'Are you sure you want to delete your details?';
 $_MODULE['<{protectedshops}prestashop>protectedshops_1f150389b70ae647f6c4b8a640ebc2d0'] = 'Protected Shops \"ShopId\" is required.';
 $_MODULE['<{protectedshops}prestashop>protectedshops_039b452cd9646bf1a60dd09146311ee7'] = 'Settings updated';
