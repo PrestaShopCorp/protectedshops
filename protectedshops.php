@@ -188,11 +188,16 @@ class Protectedshops extends Module
 
 		if ($css)
 		{
-			$this->context->smarty->assign('css', $css);
-			return $this->display(__FILE__, 'views/templates/hook/header.tpl');
+			$filename = 'document-'.(int)Tools::getValue('id_cms').'.css';
+			if(file_exists(dirname(__FILE__).'/views/css/'.$filename)
+				|| file_put_contents(dirname(__FILE__).'/views/css/'.$filename, $css))
+			{
+				if (version_compare(_PS_VERSION_, '1.5', '>') === true)
+					$this->context->controller->addCSS($this->_path.'views/css/'.$filename);
+				else
+					return '<link rel="stylesheet" href="'.$this->_path.'views/css/'.$filename.'" type="text/css" />';
+			}
 		}
-
-		return false;
 	}
 
 	public function hookNewOrder($params)
