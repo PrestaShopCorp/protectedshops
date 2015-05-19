@@ -331,7 +331,7 @@ class Protectedshops extends Module
 				$document_request = $this->getDocument($name);
 
 				$cms = new CMS($document['cms_id']);
-				$cms->content[Configuration::get('PS_LANG_DEFAULT')] = $document_request['content'];
+				$cms->content[(Language::getIdByIso('de') ? Language::getIdByIso('de') : Configuration::get('PS_LANG_DEFAULT'))] = $document_request['content'];
 				$cms->update();
 
 				$sql = 'UPDATE '._DB_PREFIX_."touchdesign_protectedshops_document
