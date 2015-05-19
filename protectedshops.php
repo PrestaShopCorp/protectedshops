@@ -251,8 +251,14 @@ class Protectedshops extends Module
 
 			$template_vars['{document}'] = $name;
 
+			$iso = Language::getIsoById($params['order']->id_lang);
+			if($iso && file_exists(dirname(__FILE__).'/mails/'.$iso.'/send_document.txt'))
+				$id_lang = $params['order']->id_lang;
+			else
+				$id_lang = Language::getIdByIso('en');
+
 			if (Validate::isEmail($params['customer']->email))
-				Mail::Send((int)$params['order']->id_lang, 'send_document',
+				Mail::Send((int)$id_lang, 'send_document',
 						sprintf(Mail::l('%s', (int)$params['order']->id_lang), $document['document']),
 						$template_vars, $params['customer']->email, $params['customer']->firstname.' '.$params['customer']->lastname,
 						null, null, $file_attachment, null, dirname(__FILE__).'/mails/', false, (int)$params['order']->id);
