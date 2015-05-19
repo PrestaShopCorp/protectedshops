@@ -178,7 +178,7 @@ class Protectedshops extends Module
 		return $this->display(__FILE__, 'views/templates/hook/update.tpl');
 	}
 
-	public function hookDisplayHeader($params)
+	public function hookHeader($params)
 	{
 		if (!Tools::getValue('controller') || Tools::getValue('controller') != 'cms' || !Tools::getValue('id_cms'))
 			return false;
