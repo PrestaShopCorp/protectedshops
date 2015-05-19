@@ -2,8 +2,8 @@
 
 global $_MODULE;
 $_MODULE = array();
-$_MODULE['<{protectedshops}prestashop>protectedshops_e5eff20f05b31302007570cadf434ba9'] = 'Protected Shops AGB Connect';
-$_MODULE['<{protectedshops}prestashop>protectedshops_36c517f7a902ca9109387c0db4d18f7d'] = 'Generate legal texts like terms and conditions, imprint, privacy policy and many more - Automatically protected against legal proceedings.';
+$_MODULE['<{protectedshops}prestashop>protectedshops_41a6704968df21d6946930145c640871'] = 'Protected Shops AGB Connect';
+$_MODULE['<{protectedshops}prestashop>protectedshops_d2bf9960462d232c116dd23bb945b952'] = 'Protected Shops AGB Connect module';
 $_MODULE['<{protectedshops}prestashop>protectedshops_69a1a3ad8dd5da6db3c4da838a0cf9c7'] = 'Are you sure you want to delete your details?';
 $_MODULE['<{protectedshops}prestashop>protectedshops_1f150389b70ae647f6c4b8a640ebc2d0'] = 'Protected Shops \"ShopId\" is required.';
 $_MODULE['<{protectedshops}prestashop>protectedshops_039b452cd9646bf1a60dd09146311ee7'] = 'Settings updated';
@@ -40,9 +40,9 @@ $_MODULE['<{protectedshops}prestashop>display_form_c41a31890959544c6523af684561a
 $_MODULE['<{protectedshops}prestashop>display_form_6c444810870d4db1769f803f0caaeeff'] = 'Send via mail';
 $_MODULE['<{protectedshops}prestashop>display_form_67c49f419076405b043483f9ff5b2d54'] = 'Last sync date';
 $_MODULE['<{protectedshops}prestashop>display_form_d52836cbf242c20bf2c5f609a75996ce'] = 'Up to date';
-$_MODULE['<{protectedshops}prestashop>display_form_c7561db7a418dd39b2201dfe110ab4a4'] = 'never';
-$_MODULE['<{protectedshops}prestashop>display_form_93cba07454f06a4a960172bbd6e2a435'] = 'Yes';
 $_MODULE['<{protectedshops}prestashop>display_form_bafd7322c6e97d25b6299b5d6fe8920b'] = 'No';
+$_MODULE['<{protectedshops}prestashop>display_form_93cba07454f06a4a960172bbd6e2a435'] = 'Yes';
+$_MODULE['<{protectedshops}prestashop>display_form_c7561db7a418dd39b2201dfe110ab4a4'] = 'never';
 $_MODULE['<{protectedshops}prestashop>display_form_a619d5430595c1a63f063c012de58f5b'] = 'Submit settings & refresh documents';
 $_MODULE['<{protectedshops}prestashop>display_form_6a26f548831e6a8c26bfbbd9f6ec61e0'] = 'Help';
 $_MODULE['<{protectedshops}prestashop>display_form_43cb884881c0f06da549972ed413c477'] = '@Link:';
