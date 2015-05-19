@@ -122,7 +122,7 @@ class Protectedshops extends Module
 				$this->refreshDocuments(true);
 
 		$this->postValidation();
-		if (isset($this->_errors) && count($this->_errors))
+		if (count($this->_errors))
 			foreach ($this->_errors as $err)
 				$this->html .= $this->displayError($err);
 		elseif (Tools::isSubmit('submitUpdate') && !count($this->_errors))
