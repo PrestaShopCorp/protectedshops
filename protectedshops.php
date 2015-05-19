@@ -295,11 +295,11 @@ class Protectedshops extends Module
 				$sql = 'INSERT INTO '._DB_PREFIX_."touchdesign_protectedshops_document SET
 						document = '".pSQL(trim($document))."',
 						cms_id = '".pSQL(trim($_POST['PROTECTEDSHOPS_DOCUMENT'][$document]['cms_id']))."',
-						mail = '".($_POST['PROTECTEDSHOPS_DOCUMENT'][$document]['mail'] ? 1 : 0)."'";
+						mail = '".($_POST['PROTECTEDSHOPS_DOCUMENT'][$document]['mail'] == 1 ? 1 : 0)."'";
 			else
 				$sql = 'UPDATE '._DB_PREFIX_."touchdesign_protectedshops_document SET
 						cms_id = '".pSQL(trim($_POST['PROTECTEDSHOPS_DOCUMENT'][$document]['cms_id']))."',
-						mail = '".($_POST['PROTECTEDSHOPS_DOCUMENT'][$document]['mail'] ? 1 : 0)."'
+						mail = '".($_POST['PROTECTEDSHOPS_DOCUMENT'][$document]['mail'] == 1 ? 1 : 0)."'
 						WHERE document = '".pSQL(trim($document))."'";
 
 			if (!Db::getInstance()->Execute($sql))

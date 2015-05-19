@@ -128,7 +128,12 @@ fieldset a:hover {
 			{/foreach}
 			</select>
 		</td>
-		<td><input type="checkbox" value=1 name="PROTECTEDSHOPS_DOCUMENT[{$name|escape:'htmlall':'UTF-8'}][mail]" {if isset($protectedshops.documents.used[$name]['mail']) && $protectedshops.documents.used[$name]['mail'] == 1}checked{/if} /></td>
+		<td>
+			<select name="PROTECTEDSHOPS_DOCUMENT[{$name|escape:'htmlall':'UTF-8'}][mail]">
+				<option {if isset($protectedshops.documents.used[$name]['mail']) && $protectedshops.documents.used[$name]['mail'] == 0}selected{/if} value=0>{l s='No' mod='protectedshops'}</option>
+				<option {if isset($protectedshops.documents.used[$name]['mail']) && $protectedshops.documents.used[$name]['mail'] == 1}selected{/if} value=1>{l s='Yes' mod='protectedshops'}</option>
+			</select>
+		</td>
 		<td>{if isset($protectedshops.documents.used[$name]['refresh_date'])}{$protectedshops.documents.used[$name]['refresh_date']|escape:'htmlall':'UTF-8'}{else}{l s='never' mod='protectedshops'}{/if}</td>
 		<td>{if isset($protectedshops.documents.used[$name]['sync_date']) && $protectedshops.documents.used[$name]['sync_date'] == $date}{l s='Yes' mod='protectedshops'}{else}{l s='No' mod='protectedshops'}{/if}</td>
 	</tr>
