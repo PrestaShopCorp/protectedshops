@@ -51,7 +51,7 @@ fieldset a:hover {
 	<legend><img src="../img/admin/unknown.gif" alt="" class="middle" />{l s='Note' mod='protectedshops'}</legend>
 	{l s='For the use of this interface you need a personal ShopKey.' mod='protectedshops'}<br />
 	{l s='Get your Shopkey of Protected Shops at:' mod='protectedshops'}
-	<a target="_blank" href="http://www.protectedshops.de/?sPartner=Touchdesign">{l s='Request Shopkey' mod='protectedshops'}</a>
+	<a target="_blank" href="http://www.protectedshops.de/partner/prestashop?sPartner=prestamodule">{l s='Request Shopkey' mod='protectedshops'}</a>
 </fieldset><br />
 
 <form method="post" action="{$protectedshops.action|escape:'htmlall':'UTF-8'}">
@@ -148,7 +148,7 @@ fieldset a:hover {
 
 <fieldset class="space">
 	<legend><img src="../img/admin/unknown.gif" alt="" class="middle" />{l s='Help' mod='protectedshops'}</legend>
-	<b>{l s='@Link:' mod='protectedshops'}</b> <a target="_blank" href="http://www.protectedshops.de/?sPartner=Touchdesign">www.protectedshops.de</a><br />
+	<b>{l s='@Link:' mod='protectedshops'}</b> <a target="_blank" href="http://www.protectedshops.de/partner/prestashop?sPartner=prestamodule">www.protectedshops.de</a><br />
 	{l s='@Copyright:' mod='protectedshops'} by <a target="_blank" href="http://www.touchdesign.de/">touchdesign</a><br />
 	<b>{l s='@Description:' mod='protectedshops'}</b><br /><br />
 	{l s='With the interface to Protected Shops you can automatically retrieve and assign legal texts in your store system. For each platform, you will receive a universal Store Key which you need to retrieve the documents.' mod='protectedshops'}
