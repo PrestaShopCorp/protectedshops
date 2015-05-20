@@ -63,7 +63,7 @@ class Protectedshops extends Module
 			|| !$this->registerHook('footer')
 			|| !$this->registerHook('newOrder')
 			|| !$this->registerHook('orderConfirmation')
-			|| !$this->registerHook('displayHeader'))
+			|| !$this->registerHook('header'))
 			return false;
 
 		$sql = 'CREATE TABLE IF NOT EXISTS '._DB_PREFIX_.'touchdesign_protectedshops_document(
