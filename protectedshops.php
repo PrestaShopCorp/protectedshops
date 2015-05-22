@@ -364,7 +364,7 @@ class Protectedshops extends Module
 			{
 				$document_request = $this->getDocument($name, 'pdf');
 				$sql = 'UPDATE '._DB_PREFIX_."touchdesign_protectedshops_document
-					SET sync_date = '".pSQL(trim($document_request['updated']))."', refresh_date = NOW(), failed = 0, pdf = '".$document_request['content']."'
+					SET sync_date = '".pSQL(trim($document_request['updated']))."', refresh_date = NOW(), failed = 0, pdf = '".pSQL($document_request['content'])."'
 					WHERE document = '".pSQL(trim($name))."'";
 
 				if (!Db::getInstance()->Execute($sql))
