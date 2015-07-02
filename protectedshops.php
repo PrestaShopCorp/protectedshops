@@ -36,14 +36,15 @@ class Protectedshops extends Module
 
 	public function __construct()
 	{
+		$this->bootstrap = true;
 		$this->name = 'protectedshops';
 		$this->tab = 'others';
-		$this->version = '2.1.0';
+		$this->version = '2.2.0';
 		$this->author = 'touchdesign';
 		parent::__construct();
 		$this->page = basename(__FILE__, '.php');
 		$this->displayName = $this->l('Protected Shops AGB Connect');
-		$this->description = $this->l('Protected Shops AGB Connect module');
+		$this->description = $this->l('Generate legal texts like terms and conditions, imprint, privacy policy and many more - Automatically protected against legal proceedings.');
 		$this->confirmUninstall = $this->l('Are you sure you want to delete your details?');
 		$this->module_key = '556bb246da8b8eae0673aa1ca8862418';
 		/* Backward compatibility */
@@ -141,6 +142,7 @@ class Protectedshops extends Module
 			$cms_items[$page['id_cms']] = $page['meta_title'];
 
 		$template_vars = array(
+				'mod_lang' => ($this->context->language->iso_code == 'de' ? 'de' : 'en'),
 				'action' => $_SERVER['REQUEST_URI'],
 				'config' => Configuration::getMultiple(array(
 						'PROTECTEDSHOPS_SHOPID',
@@ -189,7 +191,7 @@ class Protectedshops extends Module
 		if ($css)
 		{
 			$filename = 'document-'.(int)Tools::getValue('id_cms').'.css';
-			if(file_exists(dirname(__FILE__).'/views/css/'.$filename)
+			if (file_exists(dirname(__FILE__).'/views/css/'.$filename)
 				|| file_put_contents(dirname(__FILE__).'/views/css/'.$filename, $css))
 			{
 				if (version_compare(_PS_VERSION_, '1.5', '>') === true)
