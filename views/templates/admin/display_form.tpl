@@ -45,7 +45,7 @@
 <div class="row margin-bottom">
 	<div class="col-sm-3"><img src="../modules/protectedshops/views/img/logo.png" class="img-responsive" alt="logo.png" title="" /></div>
 	<div class="col-sm-6">
-		<p><img class="partner" src="../modules/protectedshops/views/img/partner.png" alt="partner.png" title="" /> {l s='As an official Partner of PrestaShop, Protected Shops offers the possibility to sell online legally safe within 15 minutes.' mod='protectedshops'} <b>{l s='The service contains the responsibility for legal texts and automatic update when new laws or court decisions become effective.' mod='protectedshops'}</b></p>
+		<p><img class="partner" src="../modules/protectedshops/views/img/{$protectedshops.mod_lang|escape:'htmlall':'UTF-8'}/partner.png" alt="partner.png" title="" /> {l s='As an official Partner of PrestaShop, Protected Shops offers the possibility to sell online legally safe within 15 minutes.' mod='protectedshops'} <b>{l s='The service contains the responsibility for legal texts and automatic update when new laws or court decisions become effective.' mod='protectedshops'}</b></p>
 	</div>
 	<div class="col-sm-3">
 		<a target="_blank" href="http://www.protectedshops.de/partner/prestashop?sPartner=prestamodule">
